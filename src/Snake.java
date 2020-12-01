@@ -1,6 +1,6 @@
 public class Snake {
     public static void main(String[] args) {
-        int n = 6;
+        int n = 3;
         int array[][] = new int[n][n];
 
         int row = 0;
@@ -29,6 +29,11 @@ public class Snake {
                 array[--row][col] = ++i;
             }
             col++;
+            if(n == 3) {
+                for (int b = 0; b < n - step; b++) { //удалить
+                    array[row][col++] = ++i;
+                }
+            }
         }
 
         for (int d = 0; d < n; d++) {
