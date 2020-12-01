@@ -7,7 +7,7 @@ public class Pyramid {
 
         int n;
 
-        System.out.println("Введите размерность массива");
+        System.out.println("Введите размерность пирамиды");
         n = enter.nextInt();
 
         for (int i = 0; i <= n; i++) {
