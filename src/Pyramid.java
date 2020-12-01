@@ -42,13 +42,14 @@ public class Pyramid {
                 array[--row][col] = a;
                 i++;
             }
+            if (n % 2 != 0) {
+                for (int b = 0; b < n - step; b++) {
+                    array[row][col++] = n;
+                }
+            }
             a++;
             col++;
-//            if (n % 2 != 0) {
-//                for (int b = 0; b < n - step; b++) {
-//                    array[row][col++] = n;
-//                }
-//            }
+
         }
 
         for (int d = 0; d < n; d++) {

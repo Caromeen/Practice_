@@ -30,7 +30,7 @@ public class Snake {
             }
             col++;
             if(n == 3) {
-                for (int b = 0; b < n - step; b++) { 
+                for (int b = 0; b < n - step; b++) {
                     array[row][col++] = ++i;
                 }
             }
